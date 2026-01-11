@@ -107,26 +107,28 @@ export default function Projects() {
                 tools: ["Sokkia IM-52 Total Station", "Autodesk Civil 3D", "Surveying Equipment"],
               },
             ].map((project, idx) => (
-              <div key={idx} className="border-l-2 border-primary pl-6 pb-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {project.title}
-                </h3>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
-                  <p className="text-primary font-semibold">{project.role}</p>
-                  <p className="text-gray-600 text-sm">{project.period}</p>
+              <div key={idx} className="border-l-4 border-primary pl-8 pb-12">
+                <div className="mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">
+                    {project.title}
+                  </h3>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                    <p className="text-lg text-primary font-semibold">{project.role}</p>
+                    <p className="text-sm font-semibold text-gray-600">{project.period}</p>
+                  </div>
                 </div>
 
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-gray-700 leading-relaxed mb-6 font-light">
                   {project.description}
                 </p>
 
-                <div className="mb-4">
-                  <h4 className="font-semibold text-gray-900 mb-2 text-sm">Key Highlights:</h4>
-                  <ul className="space-y-2">
+                <div className="mb-6">
+                  <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">Key Highlights:</h4>
+                  <ul className="space-y-3">
                     {project.highlights.map((highlight, i) => (
                       <li key={i} className="flex gap-3">
-                        <span className="text-primary font-bold flex-shrink-0">•</span>
-                        <span className="text-gray-700 text-sm">{highlight}</span>
+                        <span className="text-primary font-bold flex-shrink-0 mt-0.5">▪</span>
+                        <span className="text-gray-700 leading-relaxed">{highlight}</span>
                       </li>
                     ))}
                   </ul>
@@ -136,7 +138,7 @@ export default function Projects() {
                   {project.tools.map((tool, i) => (
                     <span
                       key={i}
-                      className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded border border-gray-200"
+                      className="text-xs bg-gradient-to-br from-red-50 to-red-100 text-primary font-semibold px-3 py-1.5 rounded-full border border-red-200 hover:bg-red-100 transition"
                     >
                       {tool}
                     </span>
