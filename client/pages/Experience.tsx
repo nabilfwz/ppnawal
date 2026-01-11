@@ -91,7 +91,16 @@ export default function Experience() {
                 ],
               },
             ].map((job, idx) => (
-              <div key={idx} className="border-l-4 border-primary pl-8 pb-12">
+              <div key={idx} className="border-l-4 border-primary pl-8 pb-12 group">
+                {job.image && (
+                  <div className="mb-6 overflow-hidden rounded-lg -ml-8 pl-8">
+                    <img
+                      src={job.image}
+                      alt={job.imageAlt}
+                      className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                )}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-3">
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
