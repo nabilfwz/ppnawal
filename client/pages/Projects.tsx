@@ -23,6 +23,8 @@ export default function Projects() {
                   "Development of 3D BIM Model and As-Built Drawings for PT Kereta Api Indonesia (KAI) Stations",
                 period: "Dec 2025 - Present",
                 role: "BIM Engineer",
+                image: "https://images.pexels.com/photos/29148783/pexels-photo-29148783.jpeg",
+                imageAlt: "3D BIM model and architectural visualization",
                 description:
                   "Developing comprehensive 3D Building Information Models for 25 railway stations based on LiDAR point cloud data acquisition and processing. Creating accurate as-built documentation to support infrastructure management and maintenance operations.",
                 highlights: [
