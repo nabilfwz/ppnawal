@@ -45,6 +45,8 @@ export default function Projects() {
                   "Development of 3D BIM Model and As-Built Drawings for Prof. Ir. KRMT Wreksodiningrat Bridge",
                 period: "Sep 2024 - Dec 2024",
                 role: "Project Lead",
+                image: "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
+                imageAlt: "Laser scanning and 3D point cloud technology for bridge survey",
                 description:
                   "Conducted comprehensive terrestrial laser scanner survey and developed detailed 3D BIM model of historic bridge structure. Produced accurate as-built drawings for engineering documentation and structural analysis.",
                 highlights: [
