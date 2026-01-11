@@ -90,6 +90,8 @@ export default function Projects() {
                   "Performance Evaluation and Accuracy Assessment of Static and Dynamic/Mobile Laser Scanner for Indoor Mapping",
                 period: "May 2025 - Oct 2025",
                 role: "Research Lead",
+                image: "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
+                imageAlt: "3D laser scanning and point cloud analysis for indoor mapping",
                 description:
                   "Conducted comprehensive evaluation of various laser scanning technologies for indoor mapping applications. Compared accuracy, efficiency, and practical applications of static TLS, SLAM systems, and mobile laser scanners.",
                 highlights: [
