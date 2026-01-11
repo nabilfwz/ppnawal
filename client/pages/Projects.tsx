@@ -114,6 +114,8 @@ export default function Projects() {
                   "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
                 period: "Dec 2024 - Feb 2025",
                 role: "Mine Surveyor Intern",
+                image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+                imageAlt: "Mining site aerial surveying and monitoring",
                 description:
                   "Conducted comprehensive surveying and monitoring for coal mining operations. Performed topographic surveys, stockpile volume measurements, and structural deformation monitoring using advanced surveying technologies.",
                 highlights: [
