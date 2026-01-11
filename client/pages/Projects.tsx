@@ -19,7 +19,8 @@ export default function Projects() {
           <div className="space-y-12">
             {[
               {
-                title: "Development of 3D BIM Model and As-Built Drawings for PT Kereta Api Indonesia (KAI) Stations",
+                title:
+                  "Development of 3D BIM Model and As-Built Drawings for PT Kereta Api Indonesia (KAI) Stations",
                 period: "Dec 2025 - Present",
                 role: "BIM Engineer",
                 description:
@@ -30,10 +31,16 @@ export default function Projects() {
                   "Producing detailed as-built drawings and documentation",
                   "Ensuring geometric accuracy for infrastructure management",
                 ],
-                tools: ["Autodesk ReCap", "Autodesk Revit", "Autodesk AutoCAD", "Point Cloud Processing"],
+                tools: [
+                  "Autodesk ReCap",
+                  "Autodesk Revit",
+                  "Autodesk AutoCAD",
+                  "Point Cloud Processing",
+                ],
               },
               {
-                title: "Development of 3D BIM Model and As-Built Drawings for Prof. Ir. KRMT Wreksodiningrat Bridge",
+                title:
+                  "Development of 3D BIM Model and As-Built Drawings for Prof. Ir. KRMT Wreksodiningrat Bridge",
                 period: "Sep 2024 - Dec 2024",
                 role: "Project Lead",
                 description:
@@ -44,10 +51,17 @@ export default function Projects() {
                   "Developed detailed 3D BIM in Autodesk Revit",
                   "Created comprehensive as-built drawings in AutoCAD",
                 ],
-                tools: ["Topcon GLS-2000", "Autodesk Revit", "Autodesk AutoCAD", "Magnet Collage", "Maptek PointStudio"],
+                tools: [
+                  "Topcon GLS-2000",
+                  "Autodesk Revit",
+                  "Autodesk AutoCAD",
+                  "Magnet Collage",
+                  "Maptek PointStudio",
+                ],
               },
               {
-                title: "Topographic Survey Project for 8 Proposed Drilling Rig Sites (PT Pertamina EP)",
+                title:
+                  "Topographic Survey Project for 8 Proposed Drilling Rig Sites (PT Pertamina EP)",
                 period: "Nov 2025 - Dec 2025",
                 role: "Survey Group Leader",
                 description:
@@ -58,10 +72,16 @@ export default function Projects() {
                   "Performed quality control on all collected data",
                   "Processed survey data and generated topographic maps using Civil 3D",
                 ],
-                tools: ["Total Station", "Autodesk Civil 3D", "Surveying Equipment", "Team Coordination"],
+                tools: [
+                  "Total Station",
+                  "Autodesk Civil 3D",
+                  "Surveying Equipment",
+                  "Team Coordination",
+                ],
               },
               {
-                title: "Performance Evaluation and Accuracy Assessment of Static and Dynamic/Mobile Laser Scanner for Indoor Mapping",
+                title:
+                  "Performance Evaluation and Accuracy Assessment of Static and Dynamic/Mobile Laser Scanner for Indoor Mapping",
                 period: "May 2025 - Oct 2025",
                 role: "Research Lead",
                 description:
@@ -72,10 +92,18 @@ export default function Projects() {
                   "Evaluated accuracy metrics and efficiency comparisons",
                   "Documented findings and recommendations for practical applications",
                 ],
-                tools: ["Topcon GLS-2000", "FJD Trion P1", "Teledyne CMS V500", "MAGNET Collage", "FJD Trion Model", "Maptek PointStudio"],
+                tools: [
+                  "Topcon GLS-2000",
+                  "FJD Trion P1",
+                  "Teledyne CMS V500",
+                  "MAGNET Collage",
+                  "FJD Trion Model",
+                  "Maptek PointStudio",
+                ],
               },
               {
-                title: "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
+                title:
+                  "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
                 period: "Dec 2024 - Feb 2025",
                 role: "Mine Surveyor Intern",
                 description:
@@ -88,10 +116,20 @@ export default function Projects() {
                   "Structural deformation monitoring using Topcon ES105",
                   "Point cloud data processing and orthophoto generation",
                 ],
-                tools: ["RIEGL VZ-2000i", "DJI Mavic 3E", "GNSS RTK", "Total Station", "Agisoft Metashape", "Pix4D", "RiSCAN PRO", "Minescape"],
+                tools: [
+                  "RIEGL VZ-2000i",
+                  "DJI Mavic 3E",
+                  "GNSS RTK",
+                  "Total Station",
+                  "Agisoft Metashape",
+                  "Pix4D",
+                  "RiSCAN PRO",
+                  "Minescape",
+                ],
               },
               {
-                title: "Dam Support Highway Survey and BIM Development (Balai Wilayah Sungai Sumatera I)",
+                title:
+                  "Dam Support Highway Survey and BIM Development (Balai Wilayah Sungai Sumatera I)",
                 period: "Jul 2023",
                 role: "Project Surveyor Intern",
                 description:
@@ -104,7 +142,11 @@ export default function Projects() {
                   "Constructed benchmark and control point markers at 1-km intervals",
                   "Quality control and design compliance verification",
                 ],
-                tools: ["Sokkia IM-52 Total Station", "Autodesk Civil 3D", "Surveying Equipment"],
+                tools: [
+                  "Sokkia IM-52 Total Station",
+                  "Autodesk Civil 3D",
+                  "Surveying Equipment",
+                ],
               },
             ].map((project, idx) => (
               <div key={idx} className="border-l-4 border-primary pl-8 pb-12">
@@ -113,8 +155,12 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-                    <p className="text-lg text-primary font-semibold">{project.role}</p>
-                    <p className="text-sm font-semibold text-gray-600">{project.period}</p>
+                    <p className="text-lg text-primary font-semibold">
+                      {project.role}
+                    </p>
+                    <p className="text-sm font-semibold text-gray-600">
+                      {project.period}
+                    </p>
                   </div>
                 </div>
 
@@ -123,12 +169,18 @@ export default function Projects() {
                 </p>
 
                 <div className="mb-6">
-                  <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">Key Highlights:</h4>
+                  <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">
+                    Key Highlights:
+                  </h4>
                   <ul className="space-y-3">
                     {project.highlights.map((highlight, i) => (
                       <li key={i} className="flex gap-3">
-                        <span className="text-primary font-bold flex-shrink-0 mt-0.5">▪</span>
-                        <span className="text-gray-700 leading-relaxed">{highlight}</span>
+                        <span className="text-primary font-bold flex-shrink-0 mt-0.5">
+                          ▪
+                        </span>
+                        <span className="text-gray-700 leading-relaxed">
+                          {highlight}
+                        </span>
                       </li>
                     ))}
                   </ul>

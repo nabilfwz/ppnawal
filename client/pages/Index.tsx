@@ -18,7 +18,9 @@ export default function Index() {
                 </span>
               </div>
               <h1 className="text-6xl md:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
-                Muhammad Nawal<br />Firjatullah
+                Muhammad Nawal
+                <br />
+                Firjatullah
               </h1>
               <p className="text-2xl text-gray-600 font-light">
                 Specializing in surveying, LiDAR mapping, and BIM modeling
@@ -26,8 +28,9 @@ export default function Index() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-2xl font-light">
-              Fresh graduate from Universitas Gadjah Mada with hands-on experience in topographic surveying,
-              3D point cloud processing, and Building Information Modeling for infrastructure projects.
+              Fresh graduate from Universitas Gadjah Mada with hands-on
+              experience in topographic surveying, 3D point cloud processing,
+              and Building Information Modeling for infrastructure projects.
               Currently working as BIM Engineer at PT Kereta Api Indonesia.
             </p>
 
@@ -58,7 +61,9 @@ export default function Index() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-600">Email</p>
-                  <p className="font-semibold text-gray-900">nawalfirjatullah16@gmail.com</p>
+                  <p className="font-semibold text-gray-900">
+                    nawalfirjatullah16@gmail.com
+                  </p>
                 </div>
               </a>
               <a
@@ -72,7 +77,9 @@ export default function Index() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-600">LinkedIn</p>
-                  <p className="font-semibold text-gray-900">nawalfirjatullah</p>
+                  <p className="font-semibold text-gray-900">
+                    nawalfirjatullah
+                  </p>
                 </div>
               </a>
               <a
@@ -84,7 +91,9 @@ export default function Index() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-600">Phone</p>
-                  <p className="font-semibold text-gray-900">+62 851 2642 6465</p>
+                  <p className="font-semibold text-gray-900">
+                    +62 851 2642 6465
+                  </p>
                 </div>
               </a>
             </div>

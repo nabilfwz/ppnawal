@@ -101,8 +101,12 @@ export default function Experience() {
                 <ul className="space-y-3">
                   {job.highlights.map((highlight, i) => (
                     <li key={i} className="flex gap-3">
-                      <span className="text-primary font-bold flex-shrink-0 mt-0.5">▪</span>
-                      <span className="text-gray-700 leading-relaxed">{highlight}</span>
+                      <span className="text-primary font-bold flex-shrink-0 mt-0.5">
+                        ▪
+                      </span>
+                      <span className="text-gray-700 leading-relaxed">
+                        {highlight}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -112,7 +116,9 @@ export default function Experience() {
 
           {/* Skills Section */}
           <section className="mt-24 pt-20 border-t-2 border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 tracking-tight">Skills & Tools</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 tracking-tight">
+              Skills & Tools
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-6">
@@ -123,27 +129,39 @@ export default function Experience() {
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Autodesk Suite (Civil 3D, Revit, AutoCAD, ReCap)</span>
+                      <span className="text-gray-700 font-medium">
+                        Autodesk Suite (Civil 3D, Revit, AutoCAD, ReCap)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Point Cloud Processing (RiSCAN PRO, CloudCompare)</span>
+                      <span className="text-gray-700 font-medium">
+                        Point Cloud Processing (RiSCAN PRO, CloudCompare)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">GIS & Mapping (ArcGIS Pro, QGIS)</span>
+                      <span className="text-gray-700 font-medium">
+                        GIS & Mapping (ArcGIS Pro, QGIS)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Drone Processing (Agisoft Metashape, Pix4D)</span>
+                      <span className="text-gray-700 font-medium">
+                        Drone Processing (Agisoft Metashape, Pix4D)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Mining Software (Minescape, Surpac)</span>
+                      <span className="text-gray-700 font-medium">
+                        Mining Software (Minescape, Surpac)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Data Processing (Magnet Collage, Maptek PointStudio)</span>
+                      <span className="text-gray-700 font-medium">
+                        Data Processing (Magnet Collage, Maptek PointStudio)
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -157,27 +175,40 @@ export default function Experience() {
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Total Station (Sokkia, Topcon, Leica, Geomax)</span>
+                      <span className="text-gray-700 font-medium">
+                        Total Station (Sokkia, Topcon, Leica, Geomax)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">GNSS RTK Systems (Sokkia, Trimble, DJI)</span>
+                      <span className="text-gray-700 font-medium">
+                        GNSS RTK Systems (Sokkia, Trimble, DJI)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Terrestrial Laser Scanner (RIEGL VZ-2000i, Topcon GLS-2000)</span>
+                      <span className="text-gray-700 font-medium">
+                        Terrestrial Laser Scanner (RIEGL VZ-2000i, Topcon
+                        GLS-2000)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">UAV Drones (DJI Mavic 3E)</span>
+                      <span className="text-gray-700 font-medium">
+                        UAV Drones (DJI Mavic 3E)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Static/Dynamic Laser Scanners (FJD Trion, CMS)</span>
+                      <span className="text-gray-700 font-medium">
+                        Static/Dynamic Laser Scanners (FJD Trion, CMS)
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
-                      <span className="text-gray-700 font-medium">Surveying Instruments & Field Equipment</span>
+                      <span className="text-gray-700 font-medium">
+                        Surveying Instruments & Field Equipment
+                      </span>
                     </div>
                   </div>
                 </div>

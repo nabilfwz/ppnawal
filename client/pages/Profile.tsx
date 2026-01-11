@@ -20,7 +20,9 @@ export default function Profile() {
 
           {/* Personal Info */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">Contact Information</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
+              Contact Information
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <a
                 href="mailto:nawalfirjatullah16@gmail.com"
@@ -28,8 +30,12 @@ export default function Profile() {
               >
                 <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">Email</p>
-                  <p className="font-semibold text-gray-900 mt-1">nawalfirjatullah16@gmail.com</p>
+                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">
+                    Email
+                  </p>
+                  <p className="font-semibold text-gray-900 mt-1">
+                    nawalfirjatullah16@gmail.com
+                  </p>
                 </div>
               </a>
               <a
@@ -38,8 +44,12 @@ export default function Profile() {
               >
                 <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">Phone</p>
-                  <p className="font-semibold text-gray-900 mt-1">+62 851 2642 6465</p>
+                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">
+                    Phone
+                  </p>
+                  <p className="font-semibold text-gray-900 mt-1">
+                    +62 851 2642 6465
+                  </p>
                 </div>
               </a>
               <a
@@ -50,7 +60,9 @@ export default function Profile() {
               >
                 <Linkedin className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">LinkedIn</p>
+                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">
+                    LinkedIn
+                  </p>
                   <p className="font-semibold text-gray-900 mt-1 flex items-center gap-1">
                     nawalfirjatullah
                     <ExternalLink className="w-4 h-4" />
@@ -60,8 +72,12 @@ export default function Profile() {
               <div className="flex items-start gap-4 p-5 rounded-lg bg-gray-50 border border-gray-200">
                 <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">Location</p>
-                  <p className="font-semibold text-gray-900 mt-1">Yogyakarta, Indonesia</p>
+                  <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">
+                    Location
+                  </p>
+                  <p className="font-semibold text-gray-900 mt-1">
+                    Yogyakarta, Indonesia
+                  </p>
                 </div>
               </div>
             </div>
@@ -69,13 +85,17 @@ export default function Profile() {
 
           {/* Education */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">Education</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
+              Education
+            </h2>
             <div className="border-l-4 border-primary pl-8">
               <div className="space-y-3">
                 <h3 className="text-xl font-bold text-gray-900">
                   Bachelor's Degree in Geodetic Engineering
                 </h3>
-                <p className="text-lg text-primary font-semibold">Universitas Gadjah Mada</p>
+                <p className="text-lg text-primary font-semibold">
+                  Universitas Gadjah Mada
+                </p>
                 <p className="text-gray-600 font-medium">Aug 2021 - Nov 2025</p>
                 <div className="pt-2 border-t border-gray-200">
                   <p className="text-gray-700">
@@ -88,47 +108,62 @@ export default function Profile() {
 
           {/* About */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">About</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
+              About
+            </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed font-light">
               <p>
-                A fresh graduate in Geodetic Engineering from Universitas Gadjah Mada with hands-on experience
-                in surveying, LiDAR mapping, mining, and construction engineering. Highly motivated to develop
-                technical skills, collaborate in teams, and adapt to multidisciplinary engineering environments.
+                A fresh graduate in Geodetic Engineering from Universitas Gadjah
+                Mada with hands-on experience in surveying, LiDAR mapping,
+                mining, and construction engineering. Highly motivated to
+                develop technical skills, collaborate in teams, and adapt to
+                multidisciplinary engineering environments.
               </p>
               <p>
-                My specialization focuses on topographic surveying, LiDAR-based 3D mapping, and Building Information
-                Modeling (BIM) for industrial applications. I have gained valuable experience across several fields,
-                including construction, mining, and infrastructure projects.
+                My specialization focuses on topographic surveying, LiDAR-based
+                3D mapping, and Building Information Modeling (BIM) for
+                industrial applications. I have gained valuable experience
+                across several fields, including construction, mining, and
+                infrastructure projects.
               </p>
               <p>
-                Currently serving as a BIM Engineer in the 3D BIM development project for PT KAI railway stations,
-                responsible for processing point cloud data and developing accurate BIM models to support as-built
-                documentation and infrastructure management.
+                Currently serving as a BIM Engineer in the 3D BIM development
+                project for PT KAI railway stations, responsible for processing
+                point cloud data and developing accurate BIM models to support
+                as-built documentation and infrastructure management.
               </p>
             </div>
           </section>
 
           {/* Certifications */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">Licenses & Certifications</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
+              Licenses & Certifications
+            </h2>
             <div className="space-y-6">
               <div className="border-l-4 border-primary pl-8 pb-6">
                 <h3 className="font-bold text-gray-900 text-lg">
                   Remote Pilot Certificate
                 </h3>
-                <p className="text-primary font-semibold mt-2">DKPPU (Direktotat Jenderal Perhubungan Udara)</p>
+                <p className="text-primary font-semibold mt-2">
+                  DKPPU (Direktotat Jenderal Perhubungan Udara)
+                </p>
               </div>
               <div className="border-l-4 border-primary pl-8 pb-6">
                 <h3 className="font-bold text-gray-900 text-lg">
                   Remote Pilot Certificate
                 </h3>
-                <p className="text-primary font-semibold mt-2">APDI (Asosiasi Pilot Drone Indonesia)</p>
+                <p className="text-primary font-semibold mt-2">
+                  APDI (Asosiasi Pilot Drone Indonesia)
+                </p>
               </div>
               <div className="border-l-4 border-primary pl-8">
                 <h3 className="font-bold text-gray-900 text-lg">
                   Land Surveying & Mapping Training Instructor (FETC)
                 </h3>
-                <p className="text-primary font-semibold mt-2">Mining, Forestry, & Construction Sectors</p>
+                <p className="text-primary font-semibold mt-2">
+                  Mining, Forestry, & Construction Sectors
+                </p>
               </div>
             </div>
           </section>
