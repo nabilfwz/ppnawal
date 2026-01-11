@@ -68,6 +68,8 @@ export default function Projects() {
                   "Topographic Survey Project for 8 Proposed Drilling Rig Sites (PT Pertamina EP)",
                 period: "Nov 2025 - Dec 2025",
                 role: "Survey Group Leader",
+                image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+                imageAlt: "Aerial topographic survey of drilling rig locations",
                 description:
                   "Led comprehensive topographic survey team across 8 proposed drilling rig locations covering approximately 38 hectares. Managed quality control, data processing, and delivered professional topographic maps for infrastructure planning.",
                 highlights: [
