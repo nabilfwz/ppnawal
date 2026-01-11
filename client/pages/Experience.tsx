@@ -16,13 +16,15 @@ export default function Experience() {
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-16">
             {[
               {
                 company: "PT Kereta Api Indonesia",
                 position: "BIM Engineer",
                 period: "Dec 2025 - Present",
                 location: "Sleman, Yogyakarta",
+                image: "https://images.pexels.com/photos/29148783/pexels-photo-29148783.jpeg",
+                imageAlt: "3D BIM model and architectural design visualization",
                 highlights: [
                   "Processing point cloud data for 25 PT KAI railway stations using Autodesk ReCap",
                   "Developing Building Information Models (BIM) for 25 PT KAI railway stations using Autodesk Revit",
