@@ -80,6 +80,8 @@ export default function Experience() {
                 position: "Project Surveyor Intern",
                 period: "Jul 2023",
                 location: "North Aceh, Aceh",
+                image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+                imageAlt: "Aerial view for dam and infrastructure surveying",
                 highlights: [
                   "Conducted control measurements and monitoring of constructed buildings and roads",
                   "Performed staking out activities for main dump design and work structures at Keureuto Reservoir",
