@@ -66,6 +66,8 @@ export default function Experience() {
                 position: "Survey Group Leader (External Consultant)",
                 period: "Nov 2025 - Dec 2025",
                 location: "Prabumulih, South Sumatera",
+                image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+                imageAlt: "Aerial surveying and topographic mapping from drone",
                 highlights: [
                   "Planned and managed topographic surveys across 8 proposed drilling rig locations (±38 ha)",
                   "Led and coordinated a 4-member survey team with clear role assignments",
