@@ -51,6 +51,8 @@ export default function Experience() {
                 position: "Trainer for Surveyor Competency Certification",
                 period: "Jul 2025 - Nov 2025",
                 location: "Sleman, Yogyakarta",
+                image: "https://images.pexels.com/photos/14664518/pexels-photo-14664518.jpeg",
+                imageAlt: "Surveying and topographic mapping visualization",
                 highlights: [
                   "Provided tutorials on theoretical and practical concepts of land surveying",
                   "Demonstrated polygon control network establishment using Geomax Zoom 20 Pro Total Station",
