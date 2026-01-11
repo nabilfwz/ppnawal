@@ -36,6 +36,8 @@ export default function Experience() {
                 position: "Mine Surveyor Intern",
                 period: "Dec 2024 - Feb 2025",
                 location: "West Aceh, Aceh",
+                image: "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
+                imageAlt: "Laser scanning and 3D point cloud technology",
                 highlights: [
                   "Conducted measurements of Coal Crushing Plant (CCP) area using RIEGL VZ-2000i laser scanner and DJI Mavic 3E",
                   "Conducted monthly stockpile measurements using multiple instruments (RIEGL VZ-2000i, DJI Mavic 3E, Sokkia GRX3 GNSS RTK, Leica TS-13)",
