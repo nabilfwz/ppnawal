@@ -161,7 +161,16 @@ export default function Projects() {
                 ],
               },
             ].map((project, idx) => (
-              <div key={idx} className="border-l-4 border-primary pl-8 pb-12">
+              <div key={idx} className="border-l-4 border-primary pl-8 pb-12 group">
+                {project.image && (
+                  <div className="mb-6 overflow-hidden rounded-lg -ml-8 pl-8">
+                    <img
+                      src={project.image}
+                      alt={project.imageAlt}
+                      className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                )}
                 <div className="mb-4">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">
                     {project.title}
