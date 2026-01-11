@@ -142,6 +142,8 @@ export default function Projects() {
                   "Dam Support Highway Survey and BIM Development (Balai Wilayah Sungai Sumatera I)",
                 period: "Jul 2023",
                 role: "Project Surveyor Intern",
+                image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+                imageAlt: "Aerial survey of dam and highway infrastructure",
                 description:
                   "Conducted comprehensive surveying for the design and construction of a 7-km highway supporting the Keureuto Reservoir dam. Performed control point establishment, topographic mapping, and as-built documentation.",
                 highlights: [
