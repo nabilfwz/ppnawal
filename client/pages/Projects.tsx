@@ -5,11 +5,16 @@ export default function Projects() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <main className="pt-32 pb-20 px-4 sm:px-8">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-16">
-            Projects
-          </h1>
+      <main className="pt-40 pb-20 px-4 sm:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-20">
+            <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
+              Projects
+            </h1>
+            <p className="text-xl text-gray-600 font-light mt-4">
+              Professional portfolio of geomatics and infrastructure projects
+            </p>
+          </div>
 
           <div className="space-y-12">
             {[
