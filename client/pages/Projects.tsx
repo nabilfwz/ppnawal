@@ -20,28 +20,6 @@ export default function Projects() {
             {[
               {
                 title:
-                  "Development of 3D BIM Model and As-Built Drawings for PT Kereta Api Indonesia (KAI) Stations",
-                period: "Dec 2025 - Present",
-                role: "BIM Engineer",
-                image: "https://images.pexels.com/photos/29148783/pexels-photo-29148783.jpeg",
-                imageAlt: "3D BIM model and architectural visualization",
-                description:
-                  "Developing comprehensive 3D Building Information Models for 25 railway stations based on LiDAR point cloud data acquisition and processing. Creating accurate as-built documentation to support infrastructure management and maintenance operations.",
-                highlights: [
-                  "Processing point cloud data from LIDAR surveys using Autodesk ReCap",
-                  "Modeling 25 railway stations in Autodesk Revit",
-                  "Producing detailed as-built drawings and documentation",
-                  "Ensuring geometric accuracy for infrastructure management",
-                ],
-                tools: [
-                  "Autodesk ReCap",
-                  "Autodesk Revit",
-                  "Autodesk AutoCAD",
-                  "Point Cloud Processing",
-                ],
-              },
-              {
-                title:
                   "Development of 3D BIM Model and As-Built Drawings for Prof. Ir. KRMT Wreksodiningrat Bridge",
                 period: "Sep 2024 - Dec 2024",
                 role: "Project Lead",
