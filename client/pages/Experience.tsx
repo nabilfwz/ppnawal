@@ -188,9 +188,9 @@ export default function Experience() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-8 bg-white border-t border-gray-200">
-        <div className="max-w-3xl mx-auto text-center text-sm text-gray-600">
-          <p>&copy; 2025 Muhammad Nawal Firjatullah</p>
+      <footer className="py-12 px-4 sm:px-8 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto text-center text-sm text-gray-600">
+          <p>&copy; 2025 Muhammad Nawal Firjatullah. All rights reserved.</p>
         </div>
       </footer>
     </div>
