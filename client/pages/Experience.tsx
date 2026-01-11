@@ -81,26 +81,28 @@ export default function Experience() {
                 ],
               },
             ].map((job, idx) => (
-              <div key={idx} className="border-l-2 border-primary pl-6 pb-8">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900">
+              <div key={idx} className="border-l-4 border-primary pl-8 pb-12">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-3">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       {job.company}
                     </h3>
                     <p className="text-lg text-primary font-semibold">
                       {job.position}
                     </p>
                   </div>
-                  <p className="text-sm text-gray-500 whitespace-nowrap">
-                    {job.period}
-                  </p>
+                  <div className="flex flex-col items-start sm:items-end">
+                    <p className="text-sm font-semibold text-gray-600 whitespace-nowrap">
+                      {job.period}
+                    </p>
+                  </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">{job.location}</p>
+                <p className="text-gray-600 font-medium mb-6">{job.location}</p>
                 <ul className="space-y-3">
                   {job.highlights.map((highlight, i) => (
                     <li key={i} className="flex gap-3">
-                      <span className="text-primary font-bold flex-shrink-0">•</span>
-                      <span className="text-gray-700">{highlight}</span>
+                      <span className="text-primary font-bold flex-shrink-0 mt-0.5">▪</span>
+                      <span className="text-gray-700 leading-relaxed">{highlight}</span>
                     </li>
                   ))}
                 </ul>
