@@ -83,14 +83,16 @@ export default function Index() {
                 </div>
               </a>
               <a
-                href="tel:+6285126426465"
+                href="https://wa.me/6285126426465"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 text-gray-700 hover:text-primary transition duration-300 group"
               >
                 <div className="p-2 bg-gray-100 rounded-lg group-hover:bg-red-50 transition">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-600">Phone</p>
+                  <p className="text-xs text-gray-600">WhatsApp</p>
                   <p className="font-semibold text-gray-900">
                     +62 851 2642 6465
                   </p>
