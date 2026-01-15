@@ -9,14 +9,19 @@ export default function Profile() {
       <main className="pt-40 pb-20 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-20 flex flex-col md:flex-row items-start gap-12 md:items-center">
-            <div className="flex-1 space-y-4">
+          <div className="mb-20 flex flex-col md:flex-row items-start gap-12 md:items-start">
+            <div className="flex-1 space-y-6">
               <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
                 Profile
               </h1>
-              <p className="text-xl text-gray-600 font-light">
-                Muhammad Nawal Firjatullah — Geodetic Engineer
-              </p>
+              <div className="space-y-4">
+                <p className="text-xl text-gray-600 font-light">
+                  Muhammad Nawal Firjatullah — Geodetic Engineer
+                </p>
+                <p className="text-gray-700 leading-relaxed font-light text-lg max-w-2xl">
+                  A Geodetic Engineering graduate from Universitas Gadjah Mada (UGM) with strong interest in topographic surveying and LiDAR-based 3D mapping for industrial applications. Although my experience is still growing, I've gained valuable experience across several fields, including construction, mining, and infrastructure — focusing on surveying, 3D mapping, and BIM modeling. Currently, I serve as a BIM Engineer in the 3D BIM development project for PT KAI railway stations, responsible for processing point cloud data and developing accurate BIM models to support as-built documentation and infrastructure management.
+                </p>
+              </div>
             </div>
             <div className="flex-shrink-0 w-full md:w-auto">
               <img
