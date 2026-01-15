@@ -34,7 +34,7 @@ export default function Profile() {
             </div>
             <div className="flex-shrink-0 w-full md:w-auto">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa21697edc70249649914cc7d2e3fdd46%2Fb0c188fa7baf4570afe84990566a1d79?format=webp&width=800"
+                src="fotonawal.png"
                 alt="Muhammad Nawal Firjatullah - Geodetic Engineer"
                 className="w-full md:w-80 h-auto rounded-xl shadow-md object-cover"
               />
