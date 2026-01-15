@@ -4,17 +4,7 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
       <div className="max-w-5xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between">
-        <Link
-          to="/"
-          className="flex items-center gap-3 font-bold text-lg text-gray-900 hover:text-primary transition duration-300 tracking-tight"
-        >
-          <img
-            src="/nawal-profile.webp"
-            alt="Nawal"
-            className="w-8 h-8 rounded-full object-cover flex-shrink-0"
-          />
-          Nawal
-        </Link>
+        <a class="flex items-center gap-3 font-bold text-lg text-gray-900 hover:text-primary transition duration-300 tracking-tight" href="/"><img src="/nawal-profile.webp" alt="Nawal" class="w-8 h-8 rounded-full object-cover flex-shrink-0">Nawal</a>
         <div className="flex items-center gap-1 sm:gap-2">
           <Link
             to="/profile"
