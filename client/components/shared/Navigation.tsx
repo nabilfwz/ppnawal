@@ -29,12 +29,12 @@ export default function Navigation() {
           >
             Projects
           </Link>
-          <a
-            href="mailto:nawalfirjatullah16@gmail.com"
-            className="text-sm text-gray-700 hover:text-primary px-3 py-2 rounded-md transition duration-300 hover:bg-gray-50 ml-2 font-medium"
+          <Link
+            to="/contact"
+            className="text-sm text-gray-700 hover:text-primary px-3 py-2 rounded-md transition duration-300 hover:bg-gray-50"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
