@@ -9,13 +9,22 @@ export default function Profile() {
       <main className="pt-40 pb-20 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-20 space-y-4">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
-              Profile
-            </h1>
-            <p className="text-xl text-gray-600 font-light">
-              Muhammad Nawal Firjatullah — Geodetic Engineer
-            </p>
+          <div className="mb-20 flex flex-col md:flex-row items-start gap-12 md:items-center">
+            <div className="flex-1 space-y-4">
+              <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
+                Profile
+              </h1>
+              <p className="text-xl text-gray-600 font-light">
+                Muhammad Nawal Firjatullah — Geodetic Engineer
+              </p>
+            </div>
+            <div className="flex-shrink-0 w-full md:w-auto">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa21697edc70249649914cc7d2e3fdd46%2Fb0c188fa7baf4570afe84990566a1d79?format=webp&width=800"
+                alt="Muhammad Nawal Firjatullah - Geodetic Engineer"
+                className="w-full md:w-80 h-auto rounded-xl shadow-md object-cover"
+              />
+            </div>
           </div>
 
           {/* Personal Info */}
