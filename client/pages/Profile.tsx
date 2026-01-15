@@ -69,30 +69,59 @@ export default function Profile() {
             <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
               Licenses & Certifications
             </h2>
-            <div className="space-y-6">
-              <div className="border-l-4 border-primary pl-8 pb-6">
-                <h3 className="font-bold text-gray-900 text-lg">
-                  Remote Pilot Certificate
-                </h3>
-                <p className="text-primary font-semibold mt-2">
-                  DKPPU (Direktotat Jenderal Perhubungan Udara)
-                </p>
+            <div className="space-y-8">
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-shrink-0 w-full md:w-48">
+                  <img
+                    src="/api/placeholder?w=200&h=280"
+                    alt="DKPPU Remote Pilot Certificate"
+                    className="w-full h-auto rounded-lg shadow-md object-cover"
+                  />
+                </div>
+                <div className="flex-1 border-l-4 border-primary pl-6 py-2">
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    Remote Pilot Certificate
+                  </h3>
+                  <p className="text-primary font-semibold mt-2">
+                    DKPPU (Direktotat Jenderal Perhubungan Udara)
+                  </p>
+                </div>
               </div>
-              <div className="border-l-4 border-primary pl-8 pb-6">
-                <h3 className="font-bold text-gray-900 text-lg">
-                  Remote Pilot Certificate
-                </h3>
-                <p className="text-primary font-semibold mt-2">
-                  APDI (Asosiasi Pilot Drone Indonesia)
-                </p>
+
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-shrink-0 w-full md:w-48">
+                  <img
+                    src="/api/placeholder?w=200&h=280"
+                    alt="APDI Remote Pilot Certificate"
+                    className="w-full h-auto rounded-lg shadow-md object-cover"
+                  />
+                </div>
+                <div className="flex-1 border-l-4 border-primary pl-6 py-2">
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    Remote Pilot Certificate
+                  </h3>
+                  <p className="text-primary font-semibold mt-2">
+                    APDI (Asosiasi Pilot Drone Indonesia)
+                  </p>
+                </div>
               </div>
-              <div className="border-l-4 border-primary pl-8">
-                <h3 className="font-bold text-gray-900 text-lg">
-                  Land Surveying & Mapping Training Instructor (FETC)
-                </h3>
-                <p className="text-primary font-semibold mt-2">
-                  Mining, Forestry, & Construction Sectors
-                </p>
+
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-shrink-0 w-full md:w-48">
+                  <img
+                    src="/api/placeholder?w=200&h=280"
+                    alt="FETC Training Instructor Certificate"
+                    className="w-full h-auto rounded-lg shadow-md object-cover"
+                  />
+                </div>
+                <div className="flex-1 border-l-4 border-primary pl-6 py-2">
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    Land Surveying & Mapping Training Instructor (FETC)
+                  </h3>
+                  <p className="text-primary font-semibold mt-2">
+                    Mining, Forestry, & Construction Sectors
+                  </p>
+                </div>
               </div>
             </div>
           </section>
