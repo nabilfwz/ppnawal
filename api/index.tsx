@@ -1,5 +1,9 @@
 // api/index.ts
-import { app } from '../server/index'; // Pastikan path ini benar mengarah ke file express Anda
+import { createServer } from '../server/index'; 
 import serverless from 'serverless-http';
 
+// Panggil fungsi untuk membuat instance app Express
+const app = createServer();
+
+// Bungkus app dengan serverless-http
 export default serverless(app);
