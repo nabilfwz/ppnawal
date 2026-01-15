@@ -120,35 +120,6 @@ export default function Profile() {
             </div>
           </section>
 
-          {/* About */}
-          <section className="mb-20">
-            <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
-              About
-            </h2>
-            <div className="space-y-6 text-gray-700 leading-relaxed font-light">
-              <p>
-                A fresh graduate in Geodetic Engineering from Universitas Gadjah
-                Mada with hands-on experience in surveying, LiDAR mapping,
-                mining, and construction engineering. Highly motivated to
-                develop technical skills, collaborate in teams, and adapt to
-                multidisciplinary engineering environments.
-              </p>
-              <p>
-                My specialization focuses on topographic surveying, LiDAR-based
-                3D mapping, and Building Information Modeling (BIM) for
-                industrial applications. I have gained valuable experience
-                across several fields, including construction, mining, and
-                infrastructure projects.
-              </p>
-              <p>
-                Currently serving as a BIM Engineer in the 3D BIM development
-                project for PT KAI railway stations, responsible for processing
-                point cloud data and developing accurate BIM models to support
-                as-built documentation and infrastructure management.
-              </p>
-            </div>
-          </section>
-
           {/* Certifications */}
           <section className="mb-24">
             <h2 className="text-2xl font-bold text-gray-900 mb-10 tracking-tight">
