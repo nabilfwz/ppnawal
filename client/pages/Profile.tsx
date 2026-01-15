@@ -19,7 +19,17 @@ export default function Profile() {
                   Muhammad Nawal Firjatullah — Geodetic Engineer
                 </p>
                 <p className="text-gray-700 leading-relaxed font-light text-lg max-w-2xl">
-                  A Geodetic Engineering graduate from Universitas Gadjah Mada (UGM) with strong interest in topographic surveying and LiDAR-based 3D mapping for industrial applications. Although my experience is still growing, I've gained valuable experience across several fields, including construction, mining, and infrastructure — focusing on surveying, 3D mapping, and BIM modeling. Currently, I serve as a BIM Engineer in the 3D BIM development project for PT KAI railway stations, responsible for processing point cloud data and developing accurate BIM models to support as-built documentation and infrastructure management.
+                  A Geodetic Engineering graduate from Universitas Gadjah Mada
+                  (UGM) with strong interest in topographic surveying and
+                  LiDAR-based 3D mapping for industrial applications. Although
+                  my experience is still growing, I've gained valuable
+                  experience across several fields, including construction,
+                  mining, and infrastructure — focusing on surveying, 3D
+                  mapping, and BIM modeling. Currently, I serve as a BIM
+                  Engineer in the 3D BIM development project for PT KAI railway
+                  stations, responsible for processing point cloud data and
+                  developing accurate BIM models to support as-built
+                  documentation and infrastructure management.
                 </p>
               </div>
             </div>
@@ -227,7 +237,8 @@ export default function Profile() {
                     <div className="flex items-start gap-3">
                       <span className="text-primary font-bold text-lg">✓</span>
                       <span className="text-gray-700 font-medium">
-                        Terrestrial Laser Scanner (RIEGL VZ-2000i, Topcon GLS-2000)
+                        Terrestrial Laser Scanner (RIEGL VZ-2000i, Topcon
+                        GLS-2000)
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
