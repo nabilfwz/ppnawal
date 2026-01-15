@@ -37,13 +37,15 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                href="tel:+6285126426465"
+                href="https://wa.me/6285126426465"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-start gap-4 p-5 rounded-lg border border-gray-200 hover:border-primary hover:bg-red-50 transition duration-300"
               >
                 <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
                 <div className="flex-1">
                   <p className="text-xs font-semibold text-gray-600 uppercase tracking-widest">
-                    Phone
+                    WhatsApp
                   </p>
                   <p className="font-semibold text-gray-900 mt-1">
                     +62 851 2642 6465
