@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
