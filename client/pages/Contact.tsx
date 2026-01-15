@@ -13,9 +13,7 @@ export default function Contact() {
             <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
               Contact
             </h1>
-            <p className="text-xl text-gray-600 font-light">
-              Get in touch
-            </p>
+            <p className="text-xl text-gray-600 font-light">Get in touch</p>
           </div>
 
           {/* Contact Information */}
