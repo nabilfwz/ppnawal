@@ -73,7 +73,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/api/placeholder?w=200&h=280"
+                    src="/Sertifikat Remote Pilot_portofolio_1 2"
                     alt="DKPPU Remote Pilot Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -91,7 +91,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/api/placeholder?w=200&h=280"
+                    src="/Sertifikat Remote Pilot_portofolio_1"
                     alt="APDI Remote Pilot Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -109,7 +109,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/api/placeholder?w=200&h=280"
+                    src="/sertifikat frasta_1 (1)_2"
                     alt="FETC Mining Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -127,7 +127,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/api/placeholder?w=200&h=280"
+                    src="/sertifikat frasta_1 (1)_3"
                     alt="FETC Forestry Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -145,7 +145,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/api/placeholder?w=200&h=280"
+                    src="/sertifikat frasta_1 (1)_4"
                     alt="FETC Construction Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
