@@ -73,7 +73,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/DKPPU"
+                    src="/DKPPU.png"
                     alt="DKPPU Remote Pilot Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -91,7 +91,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/APDI"
+                    src="/APDI.png"
                     alt="APDI Remote Pilot Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -109,7 +109,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/frasta_mining"
+                    src="/frasta_mining.png"
                     alt="FETC Mining Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -127,7 +127,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/frasta_foresty"
+                    src="/frasta_foresty.png"
                     alt="FETC Forestry Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
@@ -145,7 +145,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
-                    src="/frasta_construction"
+                    src="/frasta_construction.png"
                     alt="FETC Construction Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
