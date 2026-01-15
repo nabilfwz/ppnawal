@@ -1,5 +1,4 @@
 import Navigation from "@/components/shared/Navigation";
-import { Mail, Phone, Linkedin, MapPin, ExternalLink } from "lucide-react";
 
 export default function Profile() {
   return (
