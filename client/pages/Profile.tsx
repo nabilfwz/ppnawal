@@ -110,7 +110,7 @@ export default function Profile() {
                 <div className="flex-shrink-0 w-full md:w-48">
                   <img
                     src="/api/placeholder?w=200&h=280"
-                    alt="FETC Training Instructor Certificate"
+                    alt="FETC Mining Training Instructor Certificate"
                     className="w-full h-auto rounded-lg shadow-md object-cover"
                   />
                 </div>
@@ -119,7 +119,43 @@ export default function Profile() {
                     Land Surveying & Mapping Training Instructor (FETC)
                   </h3>
                   <p className="text-primary font-semibold mt-2">
-                    Mining, Forestry, & Construction Sectors
+                    Mining Sector
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-shrink-0 w-full md:w-48">
+                  <img
+                    src="/api/placeholder?w=200&h=280"
+                    alt="FETC Forestry Training Instructor Certificate"
+                    className="w-full h-auto rounded-lg shadow-md object-cover"
+                  />
+                </div>
+                <div className="flex-1 border-l-4 border-primary pl-6 py-2">
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    Land Surveying & Mapping Training Instructor (FETC)
+                  </h3>
+                  <p className="text-primary font-semibold mt-2">
+                    Forestry Sector
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-shrink-0 w-full md:w-48">
+                  <img
+                    src="/api/placeholder?w=200&h=280"
+                    alt="FETC Construction Training Instructor Certificate"
+                    className="w-full h-auto rounded-lg shadow-md object-cover"
+                  />
+                </div>
+                <div className="flex-1 border-l-4 border-primary pl-6 py-2">
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    Land Surveying & Mapping Training Instructor (FETC)
+                  </h3>
+                  <p className="text-primary font-semibold mt-2">
+                    Construction Sector
                   </p>
                 </div>
               </div>
