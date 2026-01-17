@@ -18,8 +18,15 @@ export default function Experience() {
       location: "Sleman, Yogyakarta",
       // UBAH JADI ARRAY (Saya duplikat agar bisa di-slide)
       images: [
-        "https://images.pexels.com/photos/29148783/pexels-photo-29148783.jpeg",
-        "https://images.pexels.com/photos/29148783/pexels-photo-29148783.jpeg",
+        "/kai_1.png",
+        "/kai_2.png",
+        "/kai_3.png",
+        "/kai_4.png",
+        "/kai_5.png",
+        "/kai_6.png",
+        "/kai_7.png",
+        "/kai_8.png",
+        "/kai_9.png",
       ],
       highlights: [
         "Processing point cloud data for 25 PT KAI railway stations using Autodesk ReCap",

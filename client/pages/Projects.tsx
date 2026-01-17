@@ -25,6 +25,7 @@ export default function Projects() {
         "/krmt_7.png",
         "/krmt_8.png",
         "/krmt_9.png",
+        "/krmt_10.png",
       ],
       description:
         "Conducted comprehensive terrestrial laser scanner survey and developed detailed 3D BIM model of historic bridge structure. Produced accurate as-built drawings for engineering documentation and structural analysis.",
