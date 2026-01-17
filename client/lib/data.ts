@@ -183,7 +183,7 @@ export const experiencesData: ExperienceData[] = [
     position: "Survey Group Leader (External Consultant)",
     period: "Nov 2025 - Dec 2025",
     location: "Prabumulih, South Sumatera",
-    type: "Internship", // <--- Internship
+    type: "Contract", // <--- Internship
     images: [
       "/pertamina (0).png",
       "/pertamina (1).png",
