@@ -1,5 +1,8 @@
 import Footer from "@/components/shared/Footer";
 import Navigation from "@/components/shared/Navigation";
+import { projectsData } from "@/lib/data"; // Import data dari file pusat
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -9,160 +12,23 @@ import {
 } from "@/components/ui/carousel";
 
 export default function Projects() {
-  const professionalProjects = [
-    {
-      title:
-        "Development of 3D BIM Model and As-Built Drawings for Prof. Ir. KRMT Wreksodiningrat Bridge",
-      period: "Sep 2024 - Dec 2024",
-      role: "Project Lead",
-      images: [
-        "/krmt_1.png",
-        "/krmt_2.png",
-        "/krmt_3.png",
-        "/krmt_4.png",
-        "/krmt_5.png",
-        "/krmt_6.png",
-        "/krmt_7.png",
-        "/krmt_8.png",
-        "/krmt_9.png",
-        "/krmt_10.png",
-      ],
-      description:
-        "Conducted comprehensive terrestrial laser scanner survey and developed detailed 3D BIM model of historic bridge structure. Produced accurate as-built drawings for engineering documentation and structural analysis.",
-      highlights: [
-        "Conducted TLS survey using Topcon GLS-2000 laser scanner",
-        "Processed and registered point cloud data with high accuracy",
-        "Developed detailed 3D BIM in Autodesk Revit",
-        "Created comprehensive as-built drawings in AutoCAD",
-      ],
-      tools: [
-        "Topcon GLS-2000",
-        "Autodesk Revit",
-        "Autodesk AutoCAD",
-        "Magnet Collage",
-        "Maptek PointStudio",
-      ],
-    },
-    {
-      title:
-        "Topographic Survey Project for 8 Proposed Drilling Rig Sites (PT Pertamina EP)",
-      period: "Nov 2025 - Dec 2025",
-      role: "Survey Group Leader",
-      images: [
-        "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-        "https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg", // Contoh gambar ke-2
-      ],
-      description:
-        "Led comprehensive topographic survey team across 8 proposed drilling rig locations covering approximately 38 hectares. Managed quality control, data processing, and delivered professional topographic maps for infrastructure planning.",
-      highlights: [
-        "Planned and executed surveys at 8 locations totaling ±38 hectares",
-        "Led a 4-member survey team with coordinated fieldwork",
-        "Performed quality control on all collected data",
-        "Processed survey data and generated topographic maps using Civil 3D",
-      ],
-      tools: [
-        "Total Station",
-        "Autodesk Civil 3D",
-        "Surveying Equipment",
-        "Team Coordination",
-      ],
-    },
-    {
-      title: "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
-      period: "Dec 2024 - Feb 2025",
-      role: "Mine Surveyor Intern",
-      images: [
-        "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      ],
-      description:
-        "Conducted comprehensive surveying and monitoring for coal mining operations. Performed topographic surveys, stockpile volume measurements, and structural deformation monitoring using advanced surveying technologies.",
-      highlights: [
-        "Monthly stockpile measurements using RIEGL VZ-2000i laser scanner (TLS method)",
-        "Monthly stockpile measurements using DJI Mavic 3E drone (PPK method)",
-        "Monthly stockpile measurements using Sokkia GRX3 GNSS RTK",
-        "Monthly stockpile measurements using Leica TS-13 Total Station",
-        "Structural deformation monitoring using Topcon ES105",
-        "Point cloud data processing and orthophoto generation",
-      ],
-      tools: [
-        "RIEGL VZ-2000i",
-        "DJI Mavic 3E",
-        "GNSS RTK",
-        "Total Station",
-        "Agisoft Metashape",
-        "Pix4D",
-        "RiSCAN PRO",
-        "Minescape",
-      ],
-    },
-    {
-      title:
-        "Dam Support Highway Survey and BIM Development (Balai Wilayah Sungai Sumatera I)",
-      period: "Jul 2023",
-      role: "Project Surveyor Intern",
-      images: [
-        "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      ],
-      description:
-        "Conducted comprehensive surveying for the design and construction of a 7-km highway supporting the Keureuto Reservoir dam. Performed control point establishment, topographic mapping, and as-built documentation.",
-      highlights: [
-        "Established control point network for 7-km highway route",
-        "Conducted topographic surveys using Sokkia IM-52 Total Station",
-        "Created planimetric maps and 3D models using Autodesk Civil 3D",
-        "Staking out for main dump designs and structural points",
-        "Constructed benchmark and control point markers at 1-km intervals",
-        "Quality control and design compliance verification",
-      ],
-      tools: [
-        "Sokkia IM-52 Total Station",
-        "Autodesk Civil 3D",
-        "Surveying Equipment",
-      ],
-    },
-  ];
+  // Filter data otomatis berdasarkan kategori
+  const professionalProjects = projectsData.filter(
+    (p) => p.category === "Professional",
+  );
+  const researchProjects = projectsData.filter(
+    (p) => p.category === "Research",
+  );
 
-  const researchProjects = [
-    {
-      title:
-        "Performance Evaluation and Accuracy Assessment of Static and Dynamic/Mobile Laser Scanner for Indoor Mapping",
-      period: "May 2025 - Oct 2025",
-      role: "Research Lead",
-      images: [
-        "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
-      ],
-      description:
-        "Conducted comprehensive evaluation of various laser scanning technologies for indoor mapping applications. Compared accuracy, efficiency, and practical applications of static TLS, SLAM systems, and mobile laser scanners. This research serves as the foundation for the bachelor thesis.",
-      highlights: [
-        "Tested three laser scanning systems: TLS (Topcon GLS-2000), SLAM (FJD Trion P1), and CMS (Teledyne CMS V500)",
-        "Processed and analyzed point cloud data from multiple systems",
-        "Evaluated accuracy metrics and efficiency comparisons",
-        "Documented findings and recommendations for practical applications",
-      ],
-      tools: [
-        "Topcon GLS-2000",
-        "FJD Trion P1",
-        "Teledyne CMS V500",
-        "MAGNET Collage",
-        "FJD Trion Model",
-        "Maptek PointStudio",
-      ],
-    },
-  ];
-
-  const renderProjects = (projects: any[]) => {
+  const renderProjects = (projects: typeof projectsData) => {
     return projects.map((project, idx) => (
       <div key={idx} className="border-l-4 border-primary pl-8 pb-12 group">
-        {/* CAROUSEL SECTION */}
+        {/* CAROUSEL GAMBAR */}
         {project.images && project.images.length > 0 && (
           <div className="mb-6 overflow-hidden rounded-lg -ml-8 pl-8">
-            <Carousel
-              className="w-full"
-              opts={{
-                loop: true, // <--- INI KUNCINYA AGAR CAROUSEL MUTER TERUS
-              }}
-            >
+            <Carousel className="w-full" opts={{ loop: true }}>
               <CarouselContent>
-                {project.images.map((img: string, i: number) => (
+                {project.images.map((img, i) => (
                   <CarouselItem key={i}>
                     <div className="w-full h-64 sm:h-80 overflow-hidden rounded-lg relative bg-gray-100">
                       <img
@@ -174,7 +40,7 @@ export default function Projects() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              {/* Navigasi akan muncul saat di-hover */}
+              {/* Navigasi muncul saat hover */}
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <CarouselPrevious className="left-12 bg-white/80 hover:bg-white border-none shadow-md" />
                 <CarouselNext className="right-4 bg-white/80 hover:bg-white border-none shadow-md" />
@@ -184,9 +50,17 @@ export default function Projects() {
         )}
 
         <div className="mb-4">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">
-            {project.title}
-          </h3>
+          {/* JUDUL YANG BISA DIKLIK */}
+          <Link
+            to={`/projects/${project.slug}`}
+            className="group/link inline-flex items-start gap-2 hover:text-primary transition-colors"
+          >
+            <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">
+              {project.title}
+            </h3>
+            <ArrowUpRight className="w-5 h-5 opacity-0 group-hover/link:opacity-100 transition-all mt-1" />
+          </Link>
+
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">
             <p className="text-lg text-primary font-semibold">{project.role}</p>
             <p className="text-sm font-semibold text-gray-600">
@@ -195,21 +69,29 @@ export default function Projects() {
           </div>
         </div>
 
-        <p className="text-gray-700 leading-relaxed mb-6 font-light">
+        <p className="text-gray-700 leading-relaxed mb-6 font-light line-clamp-3">
           {project.description}
         </p>
+
+        {/* Tombol View Detail */}
+        <Link
+          to={`/projects/${project.slug}`}
+          className="inline-flex items-center text-sm font-bold text-primary hover:underline underline-offset-4 mb-6"
+        >
+          View Full Details &rarr;
+        </Link>
 
         <div className="mb-6">
           <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">
             Key Highlights:
           </h4>
           <ul className="space-y-3">
-            {project.highlights.map((highlight: string, i: number) => (
+            {project.highlights.slice(0, 3).map((highlight, i) => (
               <li key={i} className="flex gap-3">
                 <span className="text-primary font-bold flex-shrink-0 mt-0.5">
                   ▪
                 </span>
-                <span className="text-gray-700 leading-relaxed">
+                <span className="text-gray-700 leading-relaxed line-clamp-2">
                   {highlight}
                 </span>
               </li>
@@ -218,7 +100,7 @@ export default function Projects() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {project.tools.map((tool: string, i: number) => (
+          {project.tools.map((tool, i) => (
             <span
               key={i}
               className="text-xs bg-gradient-to-br from-red-50 to-red-100 text-primary font-semibold px-3 py-1.5 rounded-full border border-red-200 hover:bg-red-100 transition"
@@ -234,7 +116,6 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-
       <main className="pt-40 pb-20 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-20">
