@@ -1,4 +1,12 @@
+import Footer from "@/components/shared/Footer";
 import Navigation from "@/components/shared/Navigation";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Projects() {
   const professionalProjects = [
@@ -7,8 +15,17 @@ export default function Projects() {
         "Development of 3D BIM Model and As-Built Drawings for Prof. Ir. KRMT Wreksodiningrat Bridge",
       period: "Sep 2024 - Dec 2024",
       role: "Project Lead",
-      image: "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
-      imageAlt: "Laser scanning and 3D point cloud technology for bridge survey",
+      images: [
+        "/krmt_1.png",
+        "/krmt_2.png",
+        "/krmt_3.png",
+        "/krmt_4.png",
+        "/krmt_5.png",
+        "/krmt_6.png",
+        "/krmt_7.png",
+        "/krmt_8.png",
+        "/krmt_9.png",
+      ],
       description:
         "Conducted comprehensive terrestrial laser scanner survey and developed detailed 3D BIM model of historic bridge structure. Produced accurate as-built drawings for engineering documentation and structural analysis.",
       highlights: [
@@ -30,8 +47,10 @@ export default function Projects() {
         "Topographic Survey Project for 8 Proposed Drilling Rig Sites (PT Pertamina EP)",
       period: "Nov 2025 - Dec 2025",
       role: "Survey Group Leader",
-      image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      imageAlt: "Aerial topographic survey of drilling rig locations",
+      images: [
+        "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+        "https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg", // Contoh gambar ke-2
+      ],
       description:
         "Led comprehensive topographic survey team across 8 proposed drilling rig locations covering approximately 38 hectares. Managed quality control, data processing, and delivered professional topographic maps for infrastructure planning.",
       highlights: [
@@ -48,12 +67,12 @@ export default function Projects() {
       ],
     },
     {
-      title:
-        "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
+      title: "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
       period: "Dec 2024 - Feb 2025",
       role: "Mine Surveyor Intern",
-      image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      imageAlt: "Mining site aerial surveying and monitoring",
+      images: [
+        "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+      ],
       description:
         "Conducted comprehensive surveying and monitoring for coal mining operations. Performed topographic surveys, stockpile volume measurements, and structural deformation monitoring using advanced surveying technologies.",
       highlights: [
@@ -80,8 +99,9 @@ export default function Projects() {
         "Dam Support Highway Survey and BIM Development (Balai Wilayah Sungai Sumatera I)",
       period: "Jul 2023",
       role: "Project Surveyor Intern",
-      image: "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      imageAlt: "Aerial survey of dam and highway infrastructure",
+      images: [
+        "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+      ],
       description:
         "Conducted comprehensive surveying for the design and construction of a 7-km highway supporting the Keureuto Reservoir dam. Performed control point establishment, topographic mapping, and as-built documentation.",
       highlights: [
@@ -106,8 +126,9 @@ export default function Projects() {
         "Performance Evaluation and Accuracy Assessment of Static and Dynamic/Mobile Laser Scanner for Indoor Mapping",
       period: "May 2025 - Oct 2025",
       role: "Research Lead",
-      image: "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
-      imageAlt: "3D laser scanning and point cloud analysis for indoor mapping",
+      images: [
+        "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
+      ],
       description:
         "Conducted comprehensive evaluation of various laser scanning technologies for indoor mapping applications. Compared accuracy, efficiency, and practical applications of static TLS, SLAM systems, and mobile laser scanners. This research serves as the foundation for the bachelor thesis.",
       highlights: [
@@ -127,26 +148,46 @@ export default function Projects() {
     },
   ];
 
-  const renderProjects = (projects) => {
+  const renderProjects = (projects: any[]) => {
     return projects.map((project, idx) => (
       <div key={idx} className="border-l-4 border-primary pl-8 pb-12 group">
-        {project.image && (
+        {/* CAROUSEL SECTION */}
+        {project.images && project.images.length > 0 && (
           <div className="mb-6 overflow-hidden rounded-lg -ml-8 pl-8">
-            <img
-              src={project.image}
-              alt={project.imageAlt}
-              className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
-            />
+            <Carousel
+              className="w-full"
+              opts={{
+                loop: true, // <--- INI KUNCINYA AGAR CAROUSEL MUTER TERUS
+              }}
+            >
+              <CarouselContent>
+                {project.images.map((img: string, i: number) => (
+                  <CarouselItem key={i}>
+                    <div className="w-full h-64 sm:h-80 overflow-hidden rounded-lg relative bg-gray-100">
+                      <img
+                        src={img}
+                        alt={`${project.title} - ${i + 1}`}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              {/* Navigasi akan muncul saat di-hover */}
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <CarouselPrevious className="left-12 bg-white/80 hover:bg-white border-none shadow-md" />
+                <CarouselNext className="right-4 bg-white/80 hover:bg-white border-none shadow-md" />
+              </div>
+            </Carousel>
           </div>
         )}
+
         <div className="mb-4">
           <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">
             {project.title}
           </h3>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-            <p className="text-lg text-primary font-semibold">
-              {project.role}
-            </p>
+            <p className="text-lg text-primary font-semibold">{project.role}</p>
             <p className="text-sm font-semibold text-gray-600">
               {project.period}
             </p>
@@ -162,7 +203,7 @@ export default function Projects() {
             Key Highlights:
           </h4>
           <ul className="space-y-3">
-            {project.highlights.map((highlight, i) => (
+            {project.highlights.map((highlight: string, i: number) => (
               <li key={i} className="flex gap-3">
                 <span className="text-primary font-bold flex-shrink-0 mt-0.5">
                   ▪
@@ -176,7 +217,7 @@ export default function Projects() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {project.tools.map((tool, i) => (
+          {project.tools.map((tool: string, i: number) => (
             <span
               key={i}
               className="text-xs bg-gradient-to-br from-red-50 to-red-100 text-primary font-semibold px-3 py-1.5 rounded-full border border-red-200 hover:bg-red-100 transition"
@@ -204,7 +245,6 @@ export default function Projects() {
             </p>
           </div>
 
-          {/* Professional Projects Section */}
           <div className="mb-24">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 tracking-tight pb-4 border-b-2 border-primary">
               Professional Projects
@@ -214,24 +254,15 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Research & Thesis Section */}
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-12 tracking-tight pb-4 border-b-2 border-primary">
               Research & Thesis
             </h2>
-            <div className="space-y-12">
-              {renderProjects(researchProjects)}
-            </div>
+            <div className="space-y-12">{renderProjects(researchProjects)}</div>
           </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="py-12 px-4 sm:px-8 bg-gray-50 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto text-center text-sm text-gray-600">
-          <p>&copy; 2025 Muhammad Nawal Firjatullah. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

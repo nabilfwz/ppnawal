@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import Navigation from "@/components/shared/Navigation";
 import { Mail, Phone, Linkedin, MapPin, ExternalLink } from "lucide-react";
 
@@ -86,11 +87,7 @@ export default function Contact() {
       </main>
 
       {/* Footer */}
-      <footer className="py-12 px-4 sm:px-8 bg-gray-50 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto text-center text-sm text-gray-600">
-          <p>&copy; 2025 Muhammad Nawal Firjatullah. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

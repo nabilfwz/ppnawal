@@ -9,7 +9,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     fs: {
-      allow: ["./client", "./shared"],
+      // PERBAIKAN DI SINI:
+      // Tambahkan path.resolve(__dirname) agar root folder (tempat index.html) diizinkan
+      allow: [path.resolve(__dirname), "./client", "./shared"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
