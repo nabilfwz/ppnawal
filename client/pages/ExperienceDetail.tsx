@@ -14,14 +14,10 @@ import {
 
 export default function ExperienceDetail() {
   const { slug } = useParams();
-
   const experience = experiencesData.find((e) => e.slug === slug);
 
-  if (!experience) {
-    return <Navigate to="/404" replace />;
-  }
+  if (!experience) return <Navigate to="/404" replace />;
 
-  // Tentukan warna badge berdasarkan tipe pekerjaan
   const isInternship = experience.type === "Internship";
   const typeBadgeColor = isInternship
     ? "bg-blue-50 text-blue-700 border-blue-200"
@@ -31,10 +27,9 @@ export default function ExperienceDetail() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <main className="pt-32 pb-20 px-4 sm:px-8">
+      <main className="pt-28 pb-20 px-4 sm:px-8 md:pt-32">
         <div className="max-w-5xl mx-auto">
-          {/* Tombol Back */}
-          <div className="mb-8">
+          <div className="mb-6 md:mb-8">
             <Button
               asChild
               variant="ghost"
@@ -49,9 +44,7 @@ export default function ExperienceDetail() {
             </Button>
           </div>
 
-          {/* Header */}
-          <div className="mb-10 max-w-4xl space-y-4">
-            {/* Badge Tipe Pekerjaan di Header juga agar jelas */}
+          <div className="mb-8 md:mb-10 max-w-4xl space-y-4">
             <span
               className={`inline-block px-3 py-1 rounded-full text-xs font-semibold border ${typeBadgeColor}`}
             >
@@ -61,37 +54,40 @@ export default function ExperienceDetail() {
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-[1.2]">
               {experience.position}
             </h1>
-            <h2 className="text-2xl text-primary font-semibold">
+            <h2 className="text-xl md:text-2xl text-primary font-semibold">
               {experience.company}
             </h2>
           </div>
 
-          {/* Carousel */}
-          <div className="mb-16 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 shadow-sm relative group">
+          <div className="mb-12 md:mb-16 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 shadow-sm relative group">
             <Carousel className="w-full" opts={{ loop: true }}>
               <CarouselContent>
                 {experience.images.map((img, index) => (
                   <CarouselItem key={index}>
-                    <div className="w-full h-[300px] md:h-[500px] bg-gray-200 relative flex items-center justify-center">
+                    <div className="w-full h-[250px] md:h-[500px] bg-gray-200 relative flex items-center justify-center">
                       <img
                         src={img}
                         alt={`${experience.company} ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-0 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-              <CarouselNext className="right-4 bg-white/90 hover:bg-white border-0 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+
+              {/* --- PERBAIKAN PANAH CAROUSEL --- */}
+              <div className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <CarouselPrevious className="left-2 md:left-4 h-9 w-9 md:h-10 md:w-10 bg-white/90 hover:bg-white border-0 shadow-lg text-gray-800" />
+                <CarouselNext className="right-2 md:right-4 h-9 w-9 md:h-10 md:w-10 bg-white/90 hover:bg-white border-0 shadow-lg text-gray-800" />
+              </div>
+              {/* ------------------------------- */}
             </Carousel>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {/* KIRI: Key Responsibilities */}
             <div className="lg:col-span-8 space-y-8">
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-100">
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-100">
                   Key Responsibilities & Achievements
                 </h2>
                 <div className="space-y-4">
@@ -112,7 +108,6 @@ export default function ExperienceDetail() {
               </section>
             </div>
 
-            {/* KANAN: Sidebar Info */}
             <div className="lg:col-span-4 space-y-8">
               <div className="p-6 rounded-2xl border border-gray-100 shadow-sm bg-white space-y-6">
                 <div>
@@ -122,14 +117,11 @@ export default function ExperienceDetail() {
                       Employment Type
                     </span>
                   </div>
-                  {/* Tampilkan Type Secara Dinamis */}
                   <p className="font-bold text-gray-900 text-lg">
                     {experience.type}
                   </p>
                 </div>
-
                 <div className="w-full h-px bg-gray-100"></div>
-
                 <div>
                   <div className="flex items-center gap-2 text-gray-400 mb-2">
                     <MapPin className="w-4 h-4" />{" "}
@@ -141,9 +133,7 @@ export default function ExperienceDetail() {
                     {experience.location}
                   </p>
                 </div>
-
                 <div className="w-full h-px bg-gray-100"></div>
-
                 <div>
                   <div className="flex items-center gap-2 text-gray-400 mb-2">
                     <Calendar className="w-4 h-4" />{" "}

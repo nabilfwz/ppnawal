@@ -1,7 +1,7 @@
 import Footer from "@/components/shared/Footer";
 import Navigation from "@/components/shared/Navigation";
-import { experiencesData } from "@/lib/data"; // IMPORT DATA
-import { Link } from "react-router-dom"; // IMPORT LINK
+import { experiencesData } from "@/lib/data";
+import { Link } from "react-router-dom";
 import {
   Carousel,
   CarouselContent,
@@ -14,14 +14,13 @@ export default function Experience() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-
-      <main className="pt-40 pb-20 px-4 sm:px-8">
+      <main className="pt-28 pb-20 px-4 sm:px-8 md:pt-40">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-20">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
+          <div className="mb-12 md:mb-20">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
               Work Experience
             </h1>
-            <p className="text-xl text-gray-600 font-light mt-4">
+            <p className="text-lg md:text-xl text-gray-600 font-light mt-4">
               Professional journey in surveying, geomatics, and BIM development
             </p>
           </div>
@@ -30,11 +29,10 @@ export default function Experience() {
             {experiencesData.map((job, idx) => (
               <div
                 key={idx}
-                className="border-l-4 border-primary pl-8 pb-12 group"
+                className="border-l-4 border-primary pl-4 md:pl-8 pb-12 group"
               >
-                {/* --- BAGIAN CAROUSEL --- */}
                 {job.images && job.images.length > 0 && (
-                  <div className="mb-6 overflow-hidden rounded-lg -ml-8 pl-8">
+                  <div className="mb-6 overflow-hidden rounded-lg -ml-4 md:-ml-8 pl-4 md:pl-8">
                     <Carousel className="w-full" opts={{ loop: true }}>
                       <CarouselContent>
                         {job.images.map((img, i) => (
@@ -49,32 +47,31 @@ export default function Experience() {
                           </CarouselItem>
                         ))}
                       </CarouselContent>
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <CarouselPrevious className="left-12 bg-white/80 hover:bg-white border-none shadow-md" />
-                        <CarouselNext className="right-4 bg-white/80 hover:bg-white border-none shadow-md" />
+
+                      {/* --- PERBAIKAN PANAH CAROUSEL --- */}
+                      <div className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                        <CarouselPrevious className="left-2 h-9 w-9 lg:left-12 lg:h-10 lg:w-10 bg-white/90 hover:bg-white border-none shadow-md text-gray-800" />
+                        <CarouselNext className="right-2 h-9 w-9 lg:right-4 lg:h-10 lg:w-10 bg-white/90 hover:bg-white border-none shadow-md text-gray-800" />
                       </div>
+                      {/* ------------------------------- */}
                     </Carousel>
                   </div>
                 )}
 
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-3">
-                  <div className="flex-1">
-                    {/* Link ke Detail */}
-                    <Link
-                      to={`/experience/${job.slug}`}
-                      className="hover:text-primary transition-colors"
-                    >
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                        {job.company}
-                      </h3>
-                    </Link>
-
+                <div className="flex flex-col gap-2 mb-3">
+                  <Link
+                    to={`/experience/${job.slug}`}
+                    className="hover:text-primary transition-colors w-fit"
+                  >
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                      {job.company}
+                    </h3>
+                  </Link>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
                     <p className="text-lg text-primary font-semibold">
                       {job.position}
                     </p>
-                  </div>
-                  <div className="flex flex-col items-start sm:items-end">
-                    <p className="text-sm font-semibold text-gray-600 whitespace-nowrap">
+                    <p className="text-sm font-semibold text-gray-600">
                       {job.period}
                     </p>
                   </div>
@@ -83,7 +80,6 @@ export default function Experience() {
                 <p className="text-gray-600 font-medium mb-6">{job.location}</p>
 
                 <ul className="space-y-3 mb-6">
-                  {/* Tampilkan Max 3 Highlight di halaman depan */}
                   {job.highlights.slice(0, 3).map((highlight, i) => (
                     <li key={i} className="flex gap-3">
                       <span className="text-primary font-bold flex-shrink-0 mt-0.5">

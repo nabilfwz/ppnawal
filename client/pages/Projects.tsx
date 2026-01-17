@@ -1,6 +1,6 @@
 import Footer from "@/components/shared/Footer";
 import Navigation from "@/components/shared/Navigation";
-import { projectsData } from "@/lib/data"; // Import data dari file pusat
+import { projectsData } from "@/lib/data";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import {
@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/carousel";
 
 export default function Projects() {
-  // Filter data otomatis berdasarkan kategori
   const professionalProjects = projectsData.filter(
     (p) => p.category === "Professional",
   );
@@ -22,10 +21,12 @@ export default function Projects() {
 
   const renderProjects = (projects: typeof projectsData) => {
     return projects.map((project, idx) => (
-      <div key={idx} className="border-l-4 border-primary pl-8 pb-12 group">
-        {/* CAROUSEL GAMBAR */}
+      <div
+        key={idx}
+        className="border-l-4 border-primary pl-4 md:pl-8 pb-12 group"
+      >
         {project.images && project.images.length > 0 && (
-          <div className="mb-6 overflow-hidden rounded-lg -ml-8 pl-8">
+          <div className="mb-6 overflow-hidden rounded-lg -ml-4 md:-ml-8 pl-4 md:pl-8">
             <Carousel className="w-full" opts={{ loop: true }}>
               <CarouselContent>
                 {project.images.map((img, i) => (
@@ -40,22 +41,24 @@ export default function Projects() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              {/* Navigasi muncul saat hover */}
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <CarouselPrevious className="left-12 bg-white/80 hover:bg-white border-none shadow-md" />
-                <CarouselNext className="right-4 bg-white/80 hover:bg-white border-none shadow-md" />
+
+              {/* --- PERBAIKAN PANAH CAROUSEL --- */}
+              {/* Mobile: Selalu muncul (opacity-100), Desktop: Muncul saat hover (lg:opacity-0) */}
+              <div className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <CarouselPrevious className="left-2 h-9 w-9 lg:left-12 lg:h-10 lg:w-10 bg-white/90 hover:bg-white border-none shadow-md text-gray-800" />
+                <CarouselNext className="right-2 h-9 w-9 lg:right-4 lg:h-10 lg:w-10 bg-white/90 hover:bg-white border-none shadow-md text-gray-800" />
               </div>
+              {/* ------------------------------- */}
             </Carousel>
           </div>
         )}
 
         <div className="mb-4">
-          {/* JUDUL YANG BISA DIKLIK */}
           <Link
             to={`/projects/${project.slug}`}
             className="group/link inline-flex items-start gap-2 hover:text-primary transition-colors"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight">
               {project.title}
             </h3>
             <ArrowUpRight className="w-5 h-5 opacity-0 group-hover/link:opacity-100 transition-all mt-1" />
@@ -73,7 +76,6 @@ export default function Projects() {
           {project.description}
         </p>
 
-        {/* Tombol View Detail */}
         <Link
           to={`/projects/${project.slug}`}
           className="inline-flex items-center text-sm font-bold text-primary hover:underline underline-offset-4 mb-6"
@@ -81,33 +83,20 @@ export default function Projects() {
           View Full Details &rarr;
         </Link>
 
-        <div className="mb-6">
-          <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">
-            Key Highlights:
-          </h4>
-          <ul className="space-y-3">
-            {project.highlights.slice(0, 3).map((highlight, i) => (
-              <li key={i} className="flex gap-3">
-                <span className="text-primary font-bold flex-shrink-0 mt-0.5">
-                  ▪
-                </span>
-                <span className="text-gray-700 leading-relaxed line-clamp-2">
-                  {highlight}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
         <div className="flex flex-wrap gap-2">
-          {project.tools.map((tool, i) => (
+          {project.tools.slice(0, 5).map((tool, i) => (
             <span
               key={i}
-              className="text-xs bg-gradient-to-br from-red-50 to-red-100 text-primary font-semibold px-3 py-1.5 rounded-full border border-red-200 hover:bg-red-100 transition"
+              className="text-xs bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full border border-gray-200"
             >
               {tool}
             </span>
           ))}
+          {project.tools.length > 5 && (
+            <span className="text-xs text-gray-400 px-2 py-1.5">
+              +{project.tools.length - 5} more
+            </span>
+          )}
         </div>
       </div>
     ));
@@ -116,19 +105,19 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <main className="pt-40 pb-20 px-4 sm:px-8">
+      <main className="pt-28 pb-20 px-4 sm:px-8 md:pt-40">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-20">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
+          <div className="mb-12 md:mb-20">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 tracking-tight">
               Projects
             </h1>
-            <p className="text-xl text-gray-600 font-light mt-4">
+            <p className="text-lg md:text-xl text-gray-600 font-light mt-4">
               Professional portfolio of geomatics and infrastructure projects
             </p>
           </div>
 
           <div className="mb-24">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 tracking-tight pb-4 border-b-2 border-primary">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 tracking-tight pb-4 border-b-2 border-primary">
               Professional Projects
             </h2>
             <div className="space-y-12">
@@ -137,7 +126,7 @@ export default function Projects() {
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 tracking-tight pb-4 border-b-2 border-primary">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 tracking-tight pb-4 border-b-2 border-primary">
               Research & Thesis
             </h2>
             <div className="space-y-12">{renderProjects(researchProjects)}</div>

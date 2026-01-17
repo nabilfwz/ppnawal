@@ -47,88 +47,6 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
-    slug: "pertamina-drilling-sites",
-    category: "Professional",
-    title:
-      "Topographic Survey Project for 8 Proposed Drilling Rig Sites (PT Pertamina EP)",
-    period: "Nov 2025 - Dec 2025",
-    role: "Survey Group Leader",
-    images: [
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      "https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg",
-    ],
-    description:
-      "Led comprehensive topographic survey team across 8 proposed drilling rig locations covering approximately 38 hectares. Managed quality control, data processing, and delivered professional topographic maps for infrastructure planning.",
-    highlights: [
-      "Planned and executed surveys at 8 locations totaling ±38 hectares",
-      "Led a 4-member survey team with coordinated fieldwork",
-      "Performed quality control on all collected data",
-      "Processed survey data and generated topographic maps using Civil 3D",
-    ],
-    tools: [
-      "Total Station",
-      "Autodesk Civil 3D",
-      "Surveying Equipment",
-      "Team Coordination",
-    ],
-  },
-  {
-    slug: "mining-survey-mifa",
-    category: "Professional",
-    title: "Mining Survey and Monitoring Project (PT Mifa Bersaudara)",
-    period: "Dec 2024 - Feb 2025",
-    role: "Mine Surveyor Intern",
-    images: [
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-    ],
-    description:
-      "Conducted comprehensive surveying and monitoring for coal mining operations. Performed topographic surveys, stockpile volume measurements, and structural deformation monitoring using advanced surveying technologies.",
-    highlights: [
-      "Monthly stockpile measurements using RIEGL VZ-2000i laser scanner (TLS method)",
-      "Monthly stockpile measurements using DJI Mavic 3E drone (PPK method)",
-      "Monthly stockpile measurements using Sokkia GRX3 GNSS RTK",
-      "Monthly stockpile measurements using Leica TS-13 Total Station",
-      "Structural deformation monitoring using Topcon ES105",
-      "Point cloud data processing and orthophoto generation",
-    ],
-    tools: [
-      "RIEGL VZ-2000i",
-      "DJI Mavic 3E",
-      "GNSS RTK",
-      "Total Station",
-      "Agisoft Metashape",
-      "Pix4D",
-      "RiSCAN PRO",
-      "Minescape",
-    ],
-  },
-  {
-    slug: "dam-support-highway",
-    category: "Professional",
-    title:
-      "Dam Support Highway Survey and BIM Development (Balai Wilayah Sungai Sumatera I)",
-    period: "Jul 2023",
-    role: "Project Surveyor Intern",
-    images: [
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-    ],
-    description:
-      "Conducted comprehensive surveying for the design and construction of a 7-km highway supporting the Keureuto Reservoir dam. Performed control point establishment, topographic mapping, and as-built documentation.",
-    highlights: [
-      "Established control point network for 7-km highway route",
-      "Conducted topographic surveys using Sokkia IM-52 Total Station",
-      "Created planimetric maps and 3D models using Autodesk Civil 3D",
-      "Staking out for main dump designs and structural points",
-      "Constructed benchmark and control point markers at 1-km intervals",
-      "Quality control and design compliance verification",
-    ],
-    tools: [
-      "Sokkia IM-52 Total Station",
-      "Autodesk Civil 3D",
-      "Surveying Equipment",
-    ],
-  },
-  {
     slug: "indoor-mapping-research",
     category: "Research",
     title:
@@ -136,7 +54,14 @@ export const projectsData: ProjectData[] = [
     period: "May 2025 - Oct 2025",
     role: "Research Lead",
     images: [
-      "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
+      "/rt (4).png",
+      "/rt (2).png",
+      "/rt (3).png",
+      "/rt (1).png",
+      "/rt (5).png",
+      "/rt (6).png",
+      "/rt (7).png",
+      "/rt (8).png",
     ],
     description:
       "Conducted comprehensive evaluation of various laser scanning technologies for indoor mapping applications. Compared accuracy, efficiency, and practical applications of static TLS, SLAM systems, and mobile laser scanners.",
@@ -188,7 +113,6 @@ export const experiencesData: ExperienceData[] = [
       "/kai_7.png",
       "/kai_8.png",
       "/kai_9.png",
-      "/kai_10.png",
     ],
     highlights: [
       "Processing point cloud data for 25 PT KAI railway stations using Autodesk ReCap",
@@ -204,8 +128,21 @@ export const experiencesData: ExperienceData[] = [
     location: "West Aceh, Aceh",
     type: "Internship", // <--- Internship
     images: [
-      "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
-      "https://images.pexels.com/photos/8090293/pexels-photo-8090293.jpeg",
+      "/mifa (4).png",
+      "/mifa (1).png",
+      "/mifa (2).png",
+      "/mifa (3).png",
+      "/mifa (5).png",
+      "/mifa (6).png",
+      "/mifa (7).png",
+      "/mifa (8).png",
+      "/mifa (9).png",
+      "/mifa (10).png",
+      "/mifa (11).png",
+      "/mifa (12).png",
+      "/mifa (13).png",
+      "/mifa (14).png",
+      "/mifa (15).png",
     ],
     highlights: [
       "Conducted measurements of Coal Crushing Plant (CCP) area using RIEGL VZ-2000i laser scanner and DJI Mavic 3E",
@@ -223,8 +160,14 @@ export const experiencesData: ExperienceData[] = [
     location: "Sleman, Yogyakarta",
     type: "Contract", // <--- Contract
     images: [
-      "https://images.pexels.com/photos/14664518/pexels-photo-14664518.jpeg",
-      "https://images.pexels.com/photos/14664518/pexels-photo-14664518.jpeg",
+      "/frasta (8).png",
+      "/frasta (1).png",
+      "/frasta (2).png",
+      "/frasta (3).png",
+      "/frasta (5).png",
+      "/frasta (6).png",
+      "/frasta (7).png",
+      "/frasta (4).png",
     ],
     highlights: [
       "Provided tutorials on theoretical and practical concepts of land surveying",
@@ -242,8 +185,16 @@ export const experiencesData: ExperienceData[] = [
     location: "Prabumulih, South Sumatera",
     type: "Internship", // <--- Internship
     images: [
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+      "/pertamina (0).png",
+      "/pertamina (1).png",
+      "/pertamina (2).png",
+      "/pertamina (3).png",
+      "/pertamina (4).png",
+      "/pertamina (5).png",
+      "/pertamina (6).png",
+      "/pertamina (7).png",
+      "/pertamina (8).png",
+      "/pertamina (9).png",
     ],
     highlights: [
       "Planned and managed topographic surveys across 8 proposed drilling rig locations (±38 ha)",
@@ -260,8 +211,15 @@ export const experiencesData: ExperienceData[] = [
     location: "North Aceh, Aceh",
     type: "Internship", // <--- Internship
     images: [
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
-      "https://images.pexels.com/photos/3274655/pexels-photo-3274655.jpeg",
+      "/pu (0).png",
+      "/pu (1).png",
+      "/pu (2).png",
+      "/pu (3).png",
+      "/pu (4).png",
+      "/pu (5).png",
+      "/pu (7).png",
+      "/pu (8).png",
+      "/pu (9).png",
     ],
     highlights: [
       "Conducted control measurements and monitoring of constructed buildings and roads",

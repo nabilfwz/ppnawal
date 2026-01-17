@@ -14,23 +14,17 @@ import {
 
 export default function ProjectDetail() {
   const { slug } = useParams();
-
-  // Cari data proyek yang cocok dengan URL
   const project = projectsData.find((p) => p.slug === slug);
 
-  // Jika tidak ketemu (misal user asal ketik URL), lempar ke 404
-  if (!project) {
-    return <Navigate to="/404" replace />;
-  }
+  if (!project) return <Navigate to="/404" replace />;
 
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <main className="pt-32 pb-20 px-4 sm:px-8">
+      <main className="pt-28 pb-20 px-4 sm:px-8 md:pt-32">
         <div className="max-w-6xl mx-auto">
-          {/* Tombol Back */}
-          <div className="mb-8">
+          <div className="mb-6 md:mb-8">
             <Button
               asChild
               variant="ghost"
@@ -45,8 +39,7 @@ export default function ProjectDetail() {
             </Button>
           </div>
 
-          {/* Header */}
-          <div className="mb-10 max-w-4xl space-y-4">
+          <div className="mb-8 md:mb-10 max-w-4xl space-y-3">
             <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono font-bold text-primary uppercase bg-primary/5 rounded border border-primary/20">
               <Layers className="w-3 h-3" />
               {project.category} Project
@@ -56,55 +49,56 @@ export default function ProjectDetail() {
             </h1>
           </div>
 
-          {/* MAIN CAROUSEL (Big Showcase) */}
-          <div className="mb-16 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 shadow-sm relative group">
+          <div className="mb-12 md:mb-16 rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 shadow-sm relative group">
             <Carousel className="w-full" opts={{ loop: true }}>
               <CarouselContent>
                 {project.images.map((img, index) => (
                   <CarouselItem key={index}>
-                    {/* Container gambar responsif */}
-                    <div className="w-full h-[300px] md:h-[500px] bg-gray-200 relative flex items-center justify-center">
+                    <div className="w-full h-[250px] md:h-[500px] bg-gray-200 relative flex items-center justify-center">
                       <img
                         src={img}
                         alt={`${project.title} ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-0 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-              <CarouselNext className="right-4 bg-white/90 hover:bg-white border-0 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+
+              {/* --- PERBAIKAN PANAH CAROUSEL --- */}
+              <div className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <CarouselPrevious className="left-2 md:left-4 h-9 w-9 md:h-10 md:w-10 bg-white/90 hover:bg-white border-0 shadow-lg text-gray-800" />
+                <CarouselNext className="right-2 md:right-4 h-9 w-9 md:h-10 md:w-10 bg-white/90 hover:bg-white border-0 shadow-lg text-gray-800" />
+              </div>
+              {/* ------------------------------- */}
             </Carousel>
           </div>
 
-          {/* GRID LAYOUT: Kiri (Konten), Kanan (Sidebar) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {/* KIRI: Deskripsi & Highlights (8 Kolom) */}
             <div className="lg:col-span-8 space-y-12">
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-100">
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-100">
                   Project Overview
                 </h2>
-                <p className="text-gray-600 leading-relaxed text-lg font-light whitespace-pre-line">
+                <p className="text-gray-600 leading-relaxed text-base md:text-lg font-light whitespace-pre-line">
                   {project.description}
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-100">
-                  Key Highlights & Methodology
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-100">
+                  Key Highlights
                 </h2>
                 <div className="space-y-4">
                   {project.highlights.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100 transition hover:border-primary/20 hover:bg-primary/5"
+                      className="flex gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100"
                     >
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white border border-gray-200 text-primary text-sm font-bold shadow-sm">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white border border-gray-200 text-primary text-sm font-bold shadow-sm">
                         {idx + 1}
                       </span>
-                      <span className="text-gray-700 leading-relaxed font-medium mt-1">
+                      <span className="text-gray-700 leading-relaxed font-medium mt-0.5">
                         {item}
                       </span>
                     </div>
@@ -113,9 +107,7 @@ export default function ProjectDetail() {
               </section>
             </div>
 
-            {/* KANAN: Sidebar Info (4 Kolom) */}
             <div className="lg:col-span-4 space-y-8">
-              {/* Card Metadata */}
               <div className="p-6 rounded-2xl border border-gray-100 shadow-sm bg-white space-y-6">
                 <div>
                   <div className="flex items-center gap-2 text-gray-400 mb-2">
@@ -128,9 +120,7 @@ export default function ProjectDetail() {
                     {project.role}
                   </p>
                 </div>
-
                 <div className="w-full h-px bg-gray-100"></div>
-
                 <div>
                   <div className="flex items-center gap-2 text-gray-400 mb-2">
                     <Calendar className="w-4 h-4" />{" "}
@@ -144,7 +134,6 @@ export default function ProjectDetail() {
                 </div>
               </div>
 
-              {/* Tech Stack */}
               <div>
                 <h3 className="flex items-center gap-2 font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">
                   <Wrench className="w-4 h-4 text-primary" /> Technologies
@@ -153,7 +142,7 @@ export default function ProjectDetail() {
                   {project.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 font-medium hover:border-primary/50 hover:text-primary transition-colors cursor-default shadow-sm"
+                      className="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 font-medium shadow-sm"
                     >
                       {tool}
                     </span>
