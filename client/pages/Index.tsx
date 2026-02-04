@@ -114,6 +114,79 @@ export default function Index() {
           </div>
         </div>
       </section>
+      {/* Education Section */}
+      <section className="py-20 px-4 sm:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12">Education</h2>
+
+          <div className="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 flex flex-col md:flex-row justify-between items-center gap-10">
+            {/* TEXT - KIRI */}
+            <div className="flex-1">
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Universitas Gadjah Mada
+              </h3>
+              <p className="text-lg text-primary font-medium mt-2">
+                Bachelor of Geodetic Engineering
+              </p>
+              <p className="text-gray-600 mt-2">2021 – 2025</p>
+              <p className="text-gray-700 mt-4 leading-relaxed max-w-2xl">
+                Focused on topographic surveying, LiDAR mapping, GIS analysis,
+                and BIM modeling for infrastructure development projects.
+              </p>
+            </div>
+
+            {/* LOGO - KANAN */}
+            <div className="w-40 h-40 flex items-center justify-center shrink-0">
+              <img
+                src="https://innopa.org/wp-content/uploads/logo-ugm.png"
+                alt="Universitas Gadjah Mada Logo"
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certification & License Section */}
+      <section className="py-28 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl font-bold text-gray-900 mb-20 text-center">
+            Certification & Licenses
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            {[
+              { name: "APDI Certification", img: "/APDI.png" },
+              { name: "DKPPU License", img: "/DKPPU.png" },
+              { name: "Frasta Construction", img: "/frasta_construction.png" },
+              { name: "Frasta Forestry", img: "/frasta_foresty.png" },
+              { name: "Frasta Mining", img: "/frasta_mining.png" },
+              {
+                name: "Remote Pilot Certificate",
+                img: "/remote_pilot_certificate.png",
+              },
+            ].map((cert, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl shadow-xl border border-gray-100 p-14 flex flex-col items-center text-center hover:shadow-2xl transition duration-300 group"
+              >
+                <div className="w-64 h-64 flex items-center justify-center mb-10">
+                  <img
+                    src={cert.img}
+                    alt={cert.name}
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300"
+                  />
+                </div>
+
+                <p className="text-2xl font-semibold text-gray-800">
+                  {cert.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
